@@ -1,3 +1,4 @@
+import time
 import cv2
 
 # Replace 'YOUR_IP_CAMERA_URL' with the URL of your IP camera
@@ -20,6 +21,7 @@ while True:
     # Exit the loop when the 'q' key is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+    #time.sleep(10/30)# wait frame time
 
 # Release the VideoCapture and close the OpenCV window
 cap.release()
